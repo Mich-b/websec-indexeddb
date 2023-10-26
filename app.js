@@ -78,6 +78,11 @@ function fetchAllValues() {
             valueAsHref.className = 'content';
             hrefRow.appendChild(hrefLabel);
             hrefRow.appendChild(valueAsHref);
+
+            section.appendChild(htmlRow);
+            section.appendChild(hrefRow);
+
+            valuesContainer.appendChild(section);
         });
     };
 }
