@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndexDB App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- API call-->
+    <div id="demo"></div>
+    <button onclick="loadXMLDoc()">Call API</button>
+
+    <!-- Input field and button to store value -->
+    <input type="text" id="input" placeholder="Enter value">
+    <button onclick="storeValue()">Store Value</button>
+    
+    <button id="deleteAll">Delete All Values</button>
+    <div id="valuesContainer"></div>
+
+    <!-- Linking the external JavaScript file -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>

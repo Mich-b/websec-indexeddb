@@ -1,0 +1,20 @@
+.section {
+    border-bottom: 1px dotted #000;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.label, .content {
+    margin-right: 10px;
+}
+
+.label {
+    font-weight: bold;
+    width: 220px;
+}
