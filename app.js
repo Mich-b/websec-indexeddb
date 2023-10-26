@@ -78,30 +78,6 @@ function fetchAllValues() {
             valueAsHref.className = 'content';
             hrefRow.appendChild(hrefLabel);
             hrefRow.appendChild(valueAsHref);
-
-            // Eval button
-            const evalRow = document.createElement('div');
-            evalRow.className = 'row';
-            const evalLabel = document.createElement('span');
-            evalLabel.className = 'label';
-            evalLabel.textContent = "Evaluate Code:";
-            const evalButton = document.createElement('button');
-            evalButton.textContent = "Evaluate";
-            evalButton.onclick = function() {
-                try {
-                    eval(storedValue);
-                } catch (error) {
-                    console.error("Error evaluating code:", error);
-                }
-            };
-            evalRow.appendChild(evalLabel);
-            evalRow.appendChild(evalButton);
-
-            section.appendChild(htmlRow);
-            section.appendChild(hrefRow);
-            section.appendChild(evalRow);
-
-            valuesContainer.appendChild(section);
         });
     };
 }
