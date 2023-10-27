@@ -61,7 +61,6 @@ function fetchAllValues() {
             const valueAsHtml = document.createElement('div');
             valueAsHtml.className = 'content';
 
-            //use innerText to HTML encode dangerous characters. 
             valueAsHtml.innerHTML = storedValue;
             htmlRow.appendChild(htmlLabel);
             htmlRow.appendChild(valueAsHtml);
